@@ -122,7 +122,7 @@ mean(penguins$flipper_length_mm)
 
 ```
 
-Plot flipper length
+Plot flipper length vs. bill length
 
 ```{r}
 
@@ -130,7 +130,7 @@ library(ggplot2)
 
 ggplot(penguins, aes(x=bill_length_mm, y=flipper_length_mm, color = species)) + geom_point(shape=19)
 
-ggsave
+ggsave("penguins_plot.pdf")
 
 ```
 
